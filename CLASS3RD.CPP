@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+long int i,n,j,a[10],c=0,m;
+clrscr();
+start :
+printf("Enter the size from 1-10---");
+scanf("%ld",&n);
+if(n<10)
+{
+for(i=0;i<n;i++)
+{
+printf("Enter %ld number ",i+1);
+scanf("%ld",&a[i]);
+}
+}
+else goto start;
+printf("Enter the key element");
+scanf("%ld",&m);
+for(i=0;i<n;i++)
+{
+if(m==a[i])c++;
+}
+if(c==0)printf("Key element not found");
+else printf("Number of times of key element %ld=%ld",m,c);
+getch();
+}
+

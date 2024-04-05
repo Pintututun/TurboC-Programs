@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+clrscr();
+printf("%f\n",12.5);
+printf("%.0f\n",12.5);
+printf("%.1f\n",12.5);
+printf("%.2f\n",12.5);
+printf("%.3f\n",12.5);
+printf("%10.2f\n",12.5);
+printf("%-10.2f\n",12.5);
+printf("%1.2f\n",12.5);
+printf("%1.2f\n",12.567);
+printf("%.2f\n",12.123);
+printf("%.0f\n",12.678);
+printf("%.0f\n",12.478);
+printf("%.0f\n",12.578);
+printf("%f\n",floor(3.3));
+printf("%f\n",ceil(3.3));
+getch();
+}

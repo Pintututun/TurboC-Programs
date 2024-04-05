@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char s1[50],s2[50];
+int i,j;
+clrscr();
+printf("Enter a string--");
+gets(s1);
+printf("Enter another string--");
+gets(s2);
+for(i=0;s1[i]!='\0';i++);
+for(s1[i++]=' ',j=0;s2[j]!='\0';j++,i++)
+s1[i]=s2[j];
+s1[i]='\0';
+puts("After removing spaces---");
+puts(s1);
+getch();
+}
